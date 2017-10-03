@@ -45,7 +45,7 @@ namespace UsaEpay
                 transactionRequestObject.CreditCardData = new CreditCardData
                 {
                     CardNumber = context.BankCardInfo.BankCardNumber,
-                    CardExpiration = context.BankCardInfo.BankCardMonth.ToString() + context.BankCardInfo.BankCardYear.ToString().Skip(2).Take(2),
+                    CardExpiration = context.BankCardInfo.BankCardMonth.ToString() + context.BankCardInfo.BankCardYear.ToString(),
                     CardCode = context.BankCardInfo.BankCardCVV2, // -2 illegible, -9 not on card.
                     AvsStreet = billingAddress.Line1,
                     AvsZip = billingAddress.PostalCode,

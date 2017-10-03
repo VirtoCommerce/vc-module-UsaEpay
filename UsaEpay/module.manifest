@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <module>
     <id>UsaEpay</id>
-    <version>0.0.1</version>
+    <version>0.0.3</version>
     <platformVersion>2.12.0</platformVersion>
     <dependencies>
         <dependency id="VirtoCommerce.Core" version="2.17.0" />
     </dependencies>
 
-    <title>USA ePay Credit Card Payments</title>
+    <title>USA ePay Payment Gateway</title>
     <description>Credit card payment processor for USA ePay.</description>
     <authors>
         <author>Montané Hamilton</author>
@@ -15,7 +15,7 @@
     <owners>
         <owner>Montané Hamilton</owner>
     </owners>
-    <projectUrl>https://virtocommerce.com/apps/extensions/paypal-direct-payment</projectUrl>
+    <projectUrl>https://github.com/montanehamilton/vc-module-UsaEpay</projectUrl>
     <iconUrl>https://github.com/montanehamilton/vc-module-UsaEpay/raw/master/UsaEpay/Content/UsaEpay.png</iconUrl>
     <releaseNotes>First version.</releaseNotes>
     <copyright></copyright>
@@ -27,7 +27,7 @@
     <settings>
         <group name="Payment methods|USA ePay">
             <setting>
-                <name>PayPal.Rest.Mode</name>
+                <name>UsaEpay.Mode</name>
                 <valueType>string</valueType>
                 <allowedValues>
                     <value>Sandbox</value>
@@ -38,16 +38,22 @@
                 <description>Type of working mode (Sandbox or Live)</description>
             </setting>
             <setting>
-                <name>PayPal.Rest.ClientId</name>
+                <name>UsaEpay.SourceKey</name>
                 <valueType>string</valueType>
-                <title>API ClientId</title>
-                <description>REST API Client Id</description>
+                <title>Source Key</title>
+                <description>Source key.</description>
             </setting>
             <setting>
-                <name>PayPal.Rest.ClientSecret</name>
+                <name>UsaEpay.Pin</name>
                 <valueType>string</valueType>
-                <title>API Client Secret</title>
-                <description>REST API Client Secret</description>
+                <title>PIN</title>
+                <description>PIN</description>
+            </setting>
+            <setting>
+                <name>UsaEpay.Endpoint</name>
+                <valueType>string</valueType>
+                <title>Endpoint</title>
+                <description>Endpoint</description>
             </setting>
         </group>
     </settings>

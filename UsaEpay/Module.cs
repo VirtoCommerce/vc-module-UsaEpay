@@ -6,7 +6,7 @@ using VirtoCommerce.Domain.Payment.Services;
 using VirtoCommerce.Platform.Core.Modularity;
 using VirtoCommerce.Platform.Core.Settings;
 
-namespace Paypal.Rest
+namespace UsaEpay
 {
     public class Module : ModuleBase
     {
