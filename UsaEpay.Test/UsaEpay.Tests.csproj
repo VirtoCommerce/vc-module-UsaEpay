@@ -83,6 +83,7 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="Extensions\UsaEpayConfigurationTests.cs" />
     <Compile Include="UsaEpayConfigurationTests.cs" />
     <Compile Include="UsaEpayServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

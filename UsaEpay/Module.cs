@@ -24,7 +24,7 @@ namespace UsaEpay
 
             Func<UsaEpayCreditCardPaymentMethod> usaEpayCreditCardPaymentMethod = () => new UsaEpayCreditCardPaymentMethod(logger)
             {
-                Name = "USA ePay Credit Card Processing",
+                Name = "Credit Card", // Shown on the payment method page in cart.
                 Description = "Process credit cards using USAePay.",
                 LogoUrl = "https://github.com/montanehamilton/vc-module-UsaEpay/raw/master/UsaEpay/Content/UsaEpay.png",
                 Settings = settings

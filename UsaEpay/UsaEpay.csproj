@@ -150,6 +150,7 @@
     <Compile Include="Communication\TokenizedCreditCard.cs" />
     <Compile Include="Exceptions\ExpiredCardException.cs" />
     <Compile Include="Exceptions\InvalidCardNumberException.cs" />
+    <Compile Include="Extensions\IntegerExtensions.cs" />
     <Compile Include="Extensions\DecimalExtensions.cs" />
     <Compile Include="MappingConfiguration.cs" />
     <Compile Include="PaymentMethods\UsaEpayCreditCardPaymentMethod.cs" />
