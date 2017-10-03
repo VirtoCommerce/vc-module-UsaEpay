@@ -52,7 +52,7 @@ namespace UsaEpay
                 };
                 transactionRequestObject.Details = new TransactionDetail
                 {
-                    Amount = context.Order.Total.ToDollars(),
+                    Amount = (context.Order.Total + context.Order.ShippingTotalWithTax).ToDollars(),
                     AmountSpecified = true,
                     Description = $"Order from {context.Store.Name}.",
                     OrderID = context.Order.Id,
