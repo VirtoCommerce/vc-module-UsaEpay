@@ -1,3 +1,3 @@
-# PayPal REST API Integration Module
+# USA ePay Credit Card Processor for VirtoCommerce
 
-PayPal REST API payment gateway integration module provides integration with the PayPal <a href="https://github.com/paypal/PayPal-NET-SDK" target="_blank">RESTful API</a>.
+USA ePay credit card processing using their SOAP API.
